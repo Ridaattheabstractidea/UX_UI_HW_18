@@ -170,6 +170,7 @@ flex-grow: 0;
 
 .workGrid > div:nth-child(1) {
   grid-area: image1;
+  padding: 50px;
   margin: 25px;
 }
 
@@ -181,6 +182,7 @@ flex-grow: 0;
 
 .workGrid > div:nth-child(3) {
   grid-area: image2;
+  padding: 50px;
   border-radius: 25px;
 }
 
@@ -191,6 +193,7 @@ flex-grow: 0;
 
 .workGrid > div:nth-child(5) {
   grid-area: image3;
+  padding: 50px;
   border-radius: 25px;
 }
 
@@ -361,6 +364,7 @@ footer ul li {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 10px;
 
   }
 
