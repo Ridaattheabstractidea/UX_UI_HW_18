@@ -170,36 +170,54 @@ flex-grow: 0;
 
 .workGrid > div:nth-child(1) {
   grid-area: image1;
-  padding: 50px;
-  margin: 25px;
+  padding: 0px 50px;
+  border-radius: 25px;
+  object-fit: cover;
+
 }
 
 .workGrid > div:nth-child(2) {
   grid-area: info1;
   padding: 50px;
+  border-radius: 25px;
+  margin-top: 0px;
+  margin-right: 50px;
+  padding: 50px;
+  border: 1px solid #E600A5
   
 }
 
 .workGrid > div:nth-child(3) {
   grid-area: image2;
-  padding: 50px;
+  padding: 0px 50px;
   border-radius: 25px;
+  
 }
 
 .workGrid > div:nth-child(4) {
   grid-area: info2;
   padding: 50px;
+  border-radius: 25px;
+  margin-top: 0px;
+  margin-right: 50px;
+  padding: 50px;
+  border: 1px solid #E600A5
 }
 
 .workGrid > div:nth-child(5) {
   grid-area: image3;
-  padding: 50px;
+  padding: 0px 50px;
   border-radius: 25px;
 }
 
 .workGrid > div:nth-child(6) {
   grid-area: info3;
   padding: 50px;
+  border-radius: 25px;
+  margin-top: 0px;
+  margin-right: 50px;
+  padding: 50px;
+  border: 1px solid #E600A5
 }
 /* grid style ends  */
 
@@ -238,6 +256,7 @@ flex-grow: 0;
   text-align: start;
   
 }
+
 
 /* view all */
 
@@ -351,8 +370,43 @@ footer ul li {
         "image3"
         "info3"
         "viewAll";
+        padding: 10px;
+        margin-bottom: 0px;
   }
 
+  .workGrid > div:nth-child(1) {
+        border-radius: 25px;
+        padding-bottom: 0px;
+
+  }
+
+  .workGrid > div:nth-child(2) {
+        border-radius: 25px;
+        margin-top: 0px;
+        padding-top: 0px;
+}
+ 
+  .workGrid > div:nth-child(3) {
+        border-radius: 25px;
+        padding-bottom: 0px;
+}
+
+  .workGrid > div:nth-child(4) {
+        border-radius: 25px;
+        margin-top: 0px;
+        padding-top: 0px;
+}
+
+  .workGrid > div:nth-child(5) {
+        border-radius: 25px;
+        padding-bottom: 0px;
+}
+
+  .workGrid > div:nth-child(6) {
+    border-radius: 25px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
   .flexContainer 
       {
         display: flex;
@@ -372,5 +426,8 @@ footer ul li {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+
+
   }
 }
