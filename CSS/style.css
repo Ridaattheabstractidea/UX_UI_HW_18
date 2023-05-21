@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  align-content: center;
 }
 
 body, html {
@@ -8,7 +9,7 @@ body, html {
   justify-content: center;
   align-items: center;
   height: auto;
-  width: 100%;
+  width: auto;
   margin: 0;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
@@ -21,8 +22,7 @@ body, html {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  
 }
 
 .logo {
@@ -30,12 +30,15 @@ body, html {
   flex-direction: column;
   justify-items: center;
   margin: 25px;
+  
 }
+
+/* menu */
 
 .menu {
   width: 100%;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   padding: 25px;
 }
@@ -49,15 +52,23 @@ body, html {
 
 .menu nav ul li {
   margin: 5px 10px;
+  font-family: 'Poppins', sans-serif;
+  color: #E600A5;
   cursor: pointer;
-  
 }
 
+.menu nav ul li.portfolio {
+  background: linear-gradient(to right, #ff7f00, #e600a5); /* Replace with your desired gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Abot me Section */
+
 .aboutMe {
-position: relative;
 height: auto;
 max-width: 600px;
-padding: 25px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -71,7 +82,6 @@ border-radius: 25px;
 border: 1px solid #E600A5;
 flex: auto;
 order: 0;
-flex-grow: 0;
 }
 
 .aboutMe p {
@@ -182,6 +192,7 @@ flex-grow: 0;
   border-radius: 25px;
   overflow: hidden;
   margin-left: 50px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 
 }
 
@@ -205,13 +216,14 @@ flex-grow: 0;
   border: 1px solid #E600A5;
   border-radius: 25px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-  position: relative;
+  
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 25px;
   overflow: hidden;
   margin-left: 50px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   
 }
 
@@ -228,17 +240,18 @@ flex-grow: 0;
 
 .workGrid > div:nth-child(5) {
   grid-area: image3;
-  object-fit: fill;
+  object-fit:fill;
   border: 1px solid #E600A5;
   border-radius: 25px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-  position: relative;
+  
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 25px;
   overflow: hidden;
   margin-left: 50px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 .workGrid > div:nth-child(6) {
@@ -258,6 +271,7 @@ flex-grow: 0;
   grid-area: viewAll;
   border: none;
   text-align: center;
+  background: transparent;
 }
 
 .viewAll button {
@@ -389,7 +403,8 @@ footer ul li {
 
 /* mobile Query */
 
-@media(max-width: 600px) {
+@media(max-width: 800px) {
+
   .workGrid 
     {
       grid-template-rows: auto auto auto auto auto auto auto;
@@ -404,62 +419,141 @@ footer ul li {
         "viewAll";
         padding: 10px;
         margin-bottom: 0px;
+        
+
   }
 
   .workGrid > div:nth-child(1) {
         border-radius: 25px;
         padding-bottom: 0px;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: auto;
+        align-items: center;
+        object-fit: cover;
+        max-width: 100%;
+        
 
   }
 
   .workGrid > div:nth-child(2) {
         border-radius: 25px;
         margin-top: 0px;
-        padding-top: 0px;
+        padding-top: 25px;
+        
+        margin-left: 0px;
+        margin-right: 0px;
+        line-height: 305%;
+        width: auto;
+        align-items: center;
+        max-width: 100%;
+        
 }
  
   .workGrid > div:nth-child(3) {
         border-radius: 25px;
         padding-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: auto;
+        align-items: center;
+        object-fit: cover;
+        max-width: 100%;
+       
 }
 
   .workGrid > div:nth-child(4) {
         border-radius: 25px;
         margin-top: 0px;
-        padding-top: 0px;
+        padding-top: 25px;
+        margin-left: 0px;
+        margin-right: 0px ;
+        line-height: 305%;
+        width: auto;
+        align-items: center;
+        max-width: 100%;
 }
 
   .workGrid > div:nth-child(5) {
         border-radius: 25px;
         padding-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: auto;
+        align-items: center;
+        object-fit: cover;
+        max-width: 100%;
+
 }
 
   .workGrid > div:nth-child(6) {
-    border-radius: 25px;
-    margin-top: 0px;
-    padding-top: 0px;
-}
+        border-radius: 25px;
+        margin-top: 0px;
+        padding-top: 25px;
+        margin-left: 0px;
+        margin-right: 0px;
+        line-height: 305%;
+        align-items: center;
+        max-width: 100%;
+    }
   .flexContainer 
       {
         display: flex;
         flex-direction: column;
         width: 100%;
+
   }
 
   .aboutMe {
+       max-width: 400px;
+       margin: 10px;
+
+  }
+
+  .mySkills {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+
+  footer {
     display: flex;
     flex-direction: column;
+    background-color: #e600a5;
     width: 100%;
-    margin: 10px;
+    height: 50px;
+    padding: 0;
 
-  }
+}
 
-  .menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+.body {
+  width: auto;
+}
 
+.workGrid > div h4 {
+  font-size: 24px;
+}
 
-  }
+.workGrid > div p {
+  font-size: 14px;
+}
+
+.header {
+  width: 100%;
+}
+
+.menu {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #E600A5;
+  
+}
+
 }
